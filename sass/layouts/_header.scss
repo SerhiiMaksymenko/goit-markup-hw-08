@@ -1,0 +1,48 @@
+header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-post,
+.header-tel {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+    &:hover,
+    &:focus {
+            color: var(--primary-background-color);
+        }
+}
+
+.header-post-icon,
+.header-tel-icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+}

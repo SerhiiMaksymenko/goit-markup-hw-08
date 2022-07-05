@@ -1,0 +1,44 @@
+.succses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
+
+.succses span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15px;
+    height: 15px;
+
+    margin-right: 9px;
+
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+
+    .checkbox:focus+& {
+            border-color: var(--primary-background-color);
+        }
+    
+    .checkbox:checked+& {
+            background-color: var(--primary-background-color);
+            border: none;
+        }
+}
+
+.checked-icon {
+    fill: transparent;
+    .checkbox:checked+.succses & {
+            fill: var(--accent-text-color);
+        }
+}
+
+
+
