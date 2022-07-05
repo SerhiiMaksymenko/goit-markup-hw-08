@@ -1,5 +1,4 @@
 .team {
-    @extend %section;
     background-color: #f5f4fa;
 }
 
@@ -17,7 +16,14 @@
 }
 
 .team__list {
-    --item: 4;
+    --item: 1;
+    @media screen and (min-width: 768px) {
+            --item: 2;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            --item: 4;
+        }
 }
 
 .item-border {

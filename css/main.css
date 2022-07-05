@@ -24,11 +24,27 @@
   overflow: hidden;
 }
 
-.team, .clients, .portfolio, .work, .qualities {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/* @import "./decimals";
+
+@mixin section($indent) {
+  padding-top: $indent;
+  padding-bottom: $indent;
 }
 
+@mixin fonts($fw, $fs, $lh, $ls: 0.03em) {
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $fs {
+    font-size: $fs;
+  }
+  @if $lh {
+    line-height: decimal-round($lh / $fs, 2);
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+} */
 /* BASE */
 ul {
   list-style: none;
@@ -42,6 +58,9 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .link {
@@ -69,11 +88,37 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 479px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1199px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* COMPONENTS */
@@ -774,7 +819,17 @@ header {
 }
 
 .qualities__list {
-  --item: 4;
+  --item: 1;
+}
+@media screen and (min-width: 768px) {
+  .qualities__list {
+    --item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .qualities__list {
+    --item: 4;
+  }
 }
 
 .qualities__wrapper {
@@ -1059,7 +1114,17 @@ address {
 }
 
 .team__list {
-  --item: 4;
+  --item: 1;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    --item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    --item: 4;
+  }
 }
 
 .item-border {

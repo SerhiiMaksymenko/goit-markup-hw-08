@@ -1,7 +1,3 @@
-.clients {
-    @extend %section;
-}
-
 .clients-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -28,8 +24,6 @@
             margin-left: 0;
         }
 }
-
-
 
 .clients-link {
     transition-property: color, border;

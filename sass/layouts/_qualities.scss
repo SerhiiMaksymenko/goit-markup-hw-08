@@ -1,12 +1,17 @@
-
-
 .qualities {
-    @extend %section;
     padding-bottom: 47px;
 }
 
 .qualities__list {
-    --item: 4;
+    --item: 1;
+    @media screen and (min-width: 768px) {
+        --item: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --item: 4;
+    }
+
 }
 
 .qualities__wrapper {
