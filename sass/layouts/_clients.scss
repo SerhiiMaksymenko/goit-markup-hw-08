@@ -12,17 +12,22 @@
 }
 
 .clients-list {
-    display: flex;
-    justify-content: center;
+    --item: 2;
+    @media screen and (min-width: 768px) {
+            --item: 3;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            --item: 7;
+        }
 }
 
 .clients-item {
     width: 170px;
     height: 92px;
-    margin-left: 30px;
-    &:first-child {
+    /* &:first-child {
             margin-left: 0;
-        }
+        } */
 }
 
 .clients-link {
