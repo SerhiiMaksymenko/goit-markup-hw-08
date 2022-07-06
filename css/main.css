@@ -24,27 +24,6 @@
   overflow: hidden;
 }
 
-/* @import "./decimals";
-
-@mixin section($indent) {
-  padding-top: $indent;
-  padding-bottom: $indent;
-}
-
-@mixin fonts($fw, $fs, $lh, $ls: 0.03em) {
-  @if $fw {
-    font-weight: $fw;
-  }
-  @if $fs {
-    font-size: $fs;
-  }
-  @if $lh {
-    line-height: decimal-round($lh / $fs, 2);
-  }
-  @if $ls {
-    letter-spacing: $ls;
-  }
-} */
 /* BASE */
 ul {
   list-style: none;
@@ -801,21 +780,6 @@ header {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    max-width: 479px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 767px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    max-width: 1199px;
-  }
-}
 
 .hero-title {
   width: 100%;
@@ -824,12 +788,18 @@ header {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    line-height: 1.36;
+    font-size: 44px;
+  }
 }
 
 .qualities {
@@ -886,6 +856,11 @@ header {
 
 .work {
   padding-top: 47px;
+}
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__title {

@@ -1,24 +1,9 @@
-/* @import "./decimals";
-
-@mixin section($indent) {
-  padding-top: $indent;
-  padding-bottom: $indent;
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  line-height: $lh;
+  font-size: $fs;
+  letter-spacing: $ls;
 }
-
-@mixin fonts($fw, $fs, $lh, $ls: 0.03em) {
-  @if $fw {
-    font-weight: $fw;
-  }
-  @if $fs {
-    font-size: $fs;
-  }
-  @if $lh {
-    line-height: decimal-round($lh / $fs, 2);
-  }
-  @if $ls {
-    letter-spacing: $ls;
-  }
-} */
 
 @mixin mobile {
   @media screen and (min-width: 480px) {
