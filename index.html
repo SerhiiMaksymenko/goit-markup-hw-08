@@ -22,11 +22,11 @@
   </head>
   <body>
     <!--Шапка-->
-    <!-- <header class="header">
+    <header class="header">
             <div class="container header-flex">
         <nav class="header-nav">
           <a href="./index.html" class="logo link"><span class="web">Web</span>Studio</a>
-          <ul class="nav-list">
+          <!-- <ul class="nav-list">
             <li class="nav-item">
               <a href="./index.html" class="nav-link current link">Студия</a>
             </li>
@@ -49,9 +49,47 @@
               >+38 096 111 11 11</a
             >
           </li>
+        </ul> -->
+<button type="button" class="mob-menu-btn">
+  <svg width="24" height="16">
+    <!-- <use class="icon-cross" href="./images/icons.svg#icon-cross"></use> -->
+    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+  </svg>
+  </button>
+  <div class="mob-menu is-hidden">
+    <button type="button" class="mob-cross-btn">
+  <svg width="19" height="19">
+    <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+    <!-- <use class="icon-menu" href="./images/icons.svg#icon-menu"></use> -->
+  </svg>
+  </button>
+             <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link link current">Студия</a>
+            </li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты</a></li>
+          </ul>
+          <ul class="mob-contacts-list">
+            <li class="mob-contacts-item">
+            <a href="tel:+380961111111" class="mob-tel link"
+              >+38 096 111 11 11</a>
+          </li>
+          <li class="mob-contacts-item">
+            <a href="mailto:info@devstudio.com" class="mob-post link"
+              >info@devstudio.com</a
+            >
+          </li>
+                  </ul>
+        <ul class="menu-soc-list">
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Instagram</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Twitter</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Facebook</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">LinkedIn</a></li>
         </ul>
+            </div>
       </div>
-    </header> -->
+    </header>
     <!--Мэйн-->
     <main>
       <!-- Герой -->
@@ -474,5 +512,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,20 +1,22 @@
 header {
     border-bottom: 1px solid #ececec;
+
 }
 
-.header-flex {
+/* .header-flex {
     display: flex;
     align-items: center;
-}
+} */
 
 .header-list {
-    display: flex;
-    margin-left: auto;
+    display: none;
+    /* display: flex;
+    margin-left: auto; */
 }
 
-.header-item:not(:last-child) {
+/* .header-item:not(:last-child) {
     margin-right: 50px;
-}
+} */
 
 .header-post,
 .header-tel {
@@ -25,8 +27,8 @@ header {
     display: flex;
     align-items: center;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 
     font-weight: 500;
     font-size: 14px;
