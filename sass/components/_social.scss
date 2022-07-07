@@ -42,11 +42,18 @@
 }
 
 .footer-soc {
-    margin-left: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+         text-align: left;
+         margin-left: 70px;
+         margin-bottom: 0;
+        }
 }
 
 .footer-soc-list {
     display: flex;
+    justify-content: center;
 }
 
 .footer-item:not(:last-child) {
@@ -61,7 +68,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+   
     color: var(--accent-text-color);
 }
 

@@ -1,8 +1,20 @@
 .footer-mailing {
-    margin-left: 93px;
+    /* margin-left: 93px; */
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+     width: 450px;      
+    }
+        @media screen and (min-width: 1200px) {
+          text-align: left;
+          margin-left: 93px;
+          margin-bottom: 0;
+        }
 }
 
 .mailing-text {
+   
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -10,20 +22,23 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    
     color: var(--accent-text-color);
 }
 
 .mailind-flex {
+    @media screen and(min-width: 1200px) {
     display: flex;
     align-items: center;
+    }
+    
 }
 
 .mailing-input {
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding-left: 16px;
-
-    width: 358px;
+    
+    width: 100%;
     height: 50px;
 
     background-color: transparent;
@@ -38,6 +53,12 @@
     
             color: rgba(255, 255, 255, 0.6);
         }
+    @media screen and(min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+}
+           
 }
 
 
@@ -46,6 +67,9 @@
     align-items: center;
     justify-content: space-between;
 
+
+    margin-right: auto;
+    margin-left: auto;
     padding: 10px 28px;
     min-width: 200px;
 
