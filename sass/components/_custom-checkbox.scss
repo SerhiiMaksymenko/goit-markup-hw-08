@@ -1,10 +1,11 @@
 .succses {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    font-size: 14px;
-    line-height: 1.71;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 1.16;
+    /* font-size: 14px;
+    line-height: 1.71; */
     letter-spacing: 0.03em;
 
     color: var(--secondary-text-color);
@@ -14,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     width: 15px;
     height: 15px;
 
