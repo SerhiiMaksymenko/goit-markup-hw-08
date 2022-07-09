@@ -3,20 +3,40 @@ header {
 
 }
 
-/* .header-flex {
+.header-flex {
     display: flex;
     align-items: center;
-} */
+}
 
 .header-list {
     display: none;
-    /* display: flex;
-    margin-left: auto; */
+    
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        /* padding-top: 21px;
+        padding-bottom: 21px; */
+        
+    }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            /* margin-left: auto;
+            margin-top: 21px;
+            margin-bottom: 21px; */
+    
+        }
 }
 
-/* .header-item:not(:last-child) {
-    margin-right: 50px;
-} */
+.header-item:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+    
+        margin-bottom: 0;
+        margin-right: 50px;
+    }
+}
 
 .header-post,
 .header-tel {
@@ -40,7 +60,20 @@ header {
     &:focus {
             color: var(--primary-background-color);
         }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        
+                }
+
+   @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
 }
+
+    }
 
 .header-post-icon,
 .header-tel-icon {
