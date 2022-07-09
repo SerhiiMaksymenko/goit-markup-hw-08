@@ -187,6 +187,7 @@ body.no-scroll {
 }
 
 .current::after {
+  display: none;
   content: "";
   position: absolute;
   bottom: -1px;
@@ -200,6 +201,11 @@ body.no-scroll {
 }
 .nav-link .current::after {
   color: var(--primary-background-color);
+}
+@media screen and (min-width: 1200px) {
+  .current::after {
+    display: block;
+  }
 }
 
 .service-btn {
@@ -234,14 +240,29 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
 }
 
 .item-btn:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .item-btn:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .filter-btn {
@@ -863,6 +884,7 @@ body.no-scroll {
   width: 100vw;
   height: 100vh;
   background-color: var(--accent-text-color);
+  overflow-y: scroll;
 }
 @media screen and (min-width: 767px) {
   .mob-menu {
@@ -891,7 +913,7 @@ body.no-scroll {
 .mob-menu-link:hover, .mob-menu-link:focus {
   color: var(--primary-background-color);
 }
-.mob-menu-link.current {
+.mob-menu-link.active {
   color: var(--primary-background-color);
 }
 
@@ -1254,6 +1276,20 @@ address {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--primary-background-color);
+}
+
+.portfolio-list {
+  --item: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    --item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    --item: 3;
+  }
 }
 
 .portfolio-border {

@@ -1,3 +1,16 @@
+.portfolio-list {
+    --item: 1;
+
+    @media screen and (min-width: 768px) {
+        --item: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --item: 3;
+    }
+}
+
+
 .portfolio-border {
     padding: 20px 24px;
 

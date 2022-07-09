@@ -41,6 +41,7 @@
 }
 
 .current::after {
+    display: none;
     content: '';
 
     position: absolute;
@@ -57,4 +58,7 @@
     .nav-link & {
             color: var(--primary-background-color);
         }
+@media screen and (min-width: 1200px) {
+    display: block;
 }
+    }

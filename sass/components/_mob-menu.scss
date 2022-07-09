@@ -62,6 +62,7 @@
     height: 100vh;
 
     background-color: var(--accent-text-color);
+    overflow-y: scroll;
     
     @media screen and (min-width: 767px) {
         display: none;
@@ -93,9 +94,11 @@ margin-bottom: 32px;
     &:focus {
         color: var(--primary-background-color);
     }
-    &.current {
-        color: var(--primary-background-color);
+    
+    &.active {
+    color: var(--primary-background-color);
     }
+    
 }
 .mob-contacts-list {
 margin-left: 40px;
