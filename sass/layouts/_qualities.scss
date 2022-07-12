@@ -37,6 +37,9 @@
     text-transform: uppercase;
 
     color: var(--primary-text-color);
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
 }
 
 .qualities__text {

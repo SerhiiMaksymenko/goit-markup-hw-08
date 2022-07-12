@@ -927,6 +927,9 @@ body.no-scroll {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-background-color);
+  /* @media screen and (min-width: 480px) {
+
+  } */
 }
 
 .mob-post {
@@ -1068,14 +1071,46 @@ header {
 
 .hero {
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/toogether-working.jpg), -webkit-gradient(linear, left top, left bottom, from(rgb(196, 196, 196)), to(rgb(196, 196, 196)));
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/toogether-working.jpg), linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-mob@1x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgb(196, 196, 196)), to(rgb(196, 196, 196)));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob@1x.jpg), linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-mob@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgb(196, 196, 196)), to(rgb(196, 196, 196)));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob@2x.jpg), linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-tab@1x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgb(196, 196, 196)), to(rgb(196, 196, 196)));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab@1x.jpg), linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-tab@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgb(196, 196, 196)), to(rgb(196, 196, 196)));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab@2x.jpg), linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-desk@1x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgb(196, 196, 196)), to(rgb(196, 196, 196)));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk@1x.jpg), linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-desk@2x.jpg), -webkit-gradient(linear, left top, left bottom, from(rgb(196, 196, 196)), to(rgb(196, 196, 196)));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desk@2x.jpg), linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
+  }
 }
 
 .hero-title {
@@ -1142,6 +1177,11 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 767px) {
+  .qualities__title {
+    text-align: center;
+  }
 }
 
 .qualities__text {
