@@ -11,20 +11,12 @@ header {
 .header-list {
     display: none;
     
-
     @media screen and (min-width: 768px) {
         display: block;
-        margin-left: auto;
-        /* padding-top: 21px;
-        padding-bottom: 21px; */
-        
+        margin-left: auto; 
     }
         @media screen and (min-width: 1200px) {
-            display: flex;
-            /* margin-left: auto;
-            margin-top: 21px;
-            margin-bottom: 21px; */
-    
+            display: flex;   
         }
 }
 
@@ -46,9 +38,6 @@ header {
 
     display: flex;
     align-items: center;
-
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
 
     font-weight: 500;
     font-size: 14px;
