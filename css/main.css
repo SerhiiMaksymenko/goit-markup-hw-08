@@ -421,7 +421,7 @@ body.no-scroll {
 .footer-mailing {
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer-mailing {
     width: 450px;
   }
@@ -535,20 +535,19 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content: center; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  /*  @media screen and (min-width: 400px) {
-           display: flex;
-           justify-content: center;
-           flex-wrap: wrap;
-       } */
+  /* @media screen and (max-width: 449px) {
+       flex-wrap: wrap;
+      } */
 }
 @media screen and (min-width: 1200px) {
   .succses {
@@ -567,6 +566,8 @@ body.no-scroll {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 15px;
   height: 15px;
   margin-right: 9px;
@@ -856,7 +857,7 @@ body.no-scroll {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .mob-menu-btn {
     display: none;
   }
@@ -896,7 +897,7 @@ body.no-scroll {
   background-color: var(--accent-text-color);
   overflow-y: scroll;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
