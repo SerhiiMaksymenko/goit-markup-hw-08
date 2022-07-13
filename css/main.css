@@ -52,9 +52,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content: center; */
   margin: calc(-1 * var(--indent) / 2);
 }
 
@@ -544,10 +542,19 @@ body.no-scroll {
       flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.16;
-  /* font-size: 14px;
-  line-height: 1.71; */
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  /*  @media screen and (min-width: 400px) {
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+       } */
+}
+@media screen and (min-width: 1200px) {
+  .succses {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .succses span {
@@ -609,9 +616,19 @@ body.no-scroll {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 450px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 450px;
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
+            transform: translate(-50%, -50%) scale(1) rotate(0);
+    -webkit-transition: -webkit-transform 450ms linear;
+    transition: -webkit-transform 450ms linear;
+    transition: transform 450ms linear;
+    transition: transform 450ms linear, -webkit-transform 450ms linear;
+  }
+  .backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0) rotate(-360deg);
+            transform: translate(-50%, -50%) scale(0) rotate(-360deg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -767,10 +784,14 @@ body.no-scroll {
 .form-link {
   font-size: 12px;
   line-height: 1.16;
-  /* font-size: 14px;
-  line-height: 1.71; */
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .input-wrap {

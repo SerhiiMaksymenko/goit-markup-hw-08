@@ -30,8 +30,15 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         width: 450px;
+        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(1) rotate(0);
+            transition: transform 450ms linear;
+        
+            .backdrop.is-hidden & {
+                transform: translate(-50%, -50%) scale(0) rotate(-360deg);
+            }
+        
         
         
     }
@@ -164,10 +171,13 @@
 .form-link {
     font-size: 12px;
     line-height: 1.16;
-        /* font-size: 14px;
-        line-height: 1.71; */
     letter-spacing: 0.03em;
     color: var(--primary-background-color);
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .input-wrap {
