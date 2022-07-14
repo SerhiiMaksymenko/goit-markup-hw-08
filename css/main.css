@@ -184,6 +184,10 @@ body.no-scroll {
   color: var(--primary-background-color);
 }
 
+.current {
+  color: var(--primary-background-color);
+}
+
 .current::after {
   display: none;
   content: "";
@@ -1063,8 +1067,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
@@ -1076,15 +1080,24 @@ header {
 @media screen and (min-width: 1200px) {
   .header-post,
 .header-tel {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-post,
-.header-tel {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-post-icon {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-tel-icon {
+    width: 10px;
+    height: 14px;
   }
 }
 
@@ -1405,7 +1418,6 @@ address {
 }
 
 .portfolio-title {
-  margin-top: 20px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;

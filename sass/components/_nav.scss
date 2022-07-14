@@ -39,7 +39,9 @@
             color: var(--primary-background-color);
         }
 }
-
+.current {
+    color: var(--primary-background-color);
+}
 .current::after {
     display: none;
     content: '';
