@@ -606,7 +606,18 @@ body.no-scroll {
 
 .modal {
   padding: 40px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
+          transform: translate(-50%, -50%) scale(1) rotate(0);
+  -webkit-transition: -webkit-transform 450ms linear;
+  transition: -webkit-transform 450ms linear;
+  transition: transform 450ms linear;
+  transition: transform 450ms linear, -webkit-transform 450ms linear;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -614,10 +625,7 @@ body.no-scroll {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 450px;
+    max-width: 450px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
@@ -634,7 +642,7 @@ body.no-scroll {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
@@ -960,9 +968,11 @@ body.no-scroll {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-background-color);
-  /* @media screen and (min-width: 480px) {
-
-  } */
+}
+@media screen and (max-width: 479px) {
+  .mob-tel {
+    font-size: 24px;
+  }
 }
 
 .mob-post {
