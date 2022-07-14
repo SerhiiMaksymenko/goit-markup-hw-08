@@ -535,19 +535,13 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* justify-content: center; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  /* @media screen and (max-width: 449px) {
-       flex-wrap: wrap;
-      } */
 }
 @media screen and (min-width: 1200px) {
   .succses {
@@ -556,7 +550,7 @@ body.no-scroll {
   }
 }
 
-.succses span {
+.succses .succses-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,18 +560,16 @@ body.no-scroll {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 15px;
   height: 15px;
   margin-right: 9px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
 }
-.checkbox:focus + .succses span {
+.checkbox:focus + .succses .succses-checkbox {
   border-color: var(--primary-background-color);
 }
-.checkbox:checked + .succses span {
+.checkbox:checked + .succses .succses-checkbox {
   background-color: var(--primary-background-color);
   border: none;
 }
@@ -791,9 +783,6 @@ body.no-scroll {
 }
 
 .form-link {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
   color: var(--primary-background-color);
 }
 @media screen and (min-width: 1200px) {
@@ -1163,8 +1152,14 @@ header {
   text-transform: uppercase;
   color: var(--accent-text-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-title {
+    max-width: 696px;
     line-height: 1.36;
     font-size: 44px;
   }
